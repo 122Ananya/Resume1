@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background: linear-gradient(90deg, #031540 10%, white 95%);
+        }
+
+        section {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        button {
+            background-color: #073399;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color:#031540;
+        }
+        table
+{
+    text-align: center;
+    width: 550px;
+}
+    </style>
+</head>
+<body>
+    <section id="personalSection">
+        <h2>Personal Information</h2>
+            Name: Ananya N Shetty<br>
+            Ph No:+91 7760510252<br>
+            Email:ananyan.btech23@rvu.edu.in
+    </section>
+
+
+
+    <section id="educationSection">
+        <h2>Education</h2>
+        <table border="2">
+        
+            <tr>
+                        <th>School</th>
+                        <th>Std</th>
+                        <th>Board</th>
+                        <th>Marks</th>
+            </tr>
+                    
+            <tr>
+                        <td>Red Hills High School</td>
+                        <td>10<sup>th</th></sup></td>
+                        <td>CBSE</td>
+                        <td>94%</td>
+            </tr>
+                    
+            <tr>
+                        <td>Narayana PU College</td>
+                        <td>2<sup>nd</sup> PUC</td>
+                        <td>STATE</td>
+                        <td>95%</td>
+        
+            </tr>
+            <tr>
+                        <td>RV University</td>
+                        <td>CSE</td>
+                        <td>Autonomous</td>
+                        <td>CGPA-9</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="hobbiesSection">
+        <h2>Hobbies</h2>
+        <ul>
+                <li>Dancing: I am learning dance from past 12 years.</li>
+                <li>Sports: I play badminton tournaments.</li>
+                <li>Reading books: I have raed a lot of novels.</li>
+        </ul>
+    </section>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === 'none' || section.style.display === '') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        }
+    </script>
+    <button onclick="toggleSection('personalSection')">Close Persoanl Section</button>
+    <button onclick="toggleSection('educationSection')">Close Education Section</button>
+    <button onclick="toggleSection('hobbiesSection')">Close Hobbies Section</button>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

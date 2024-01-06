@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background: linear-gradient(90deg, #031540 10%, white 95%);
+        }
+
+        section {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        button {
+            background-color: #073399;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color:#031540;
+        }
+        
+        
+        table
+{
+    text-align: center;
+    width: 550px;
+}
+
+    </style>
+</head>
+<body>
+    <section id="experinceSection">
+        <h2>Experience</h2>
+            <ol>
+                <li>HTML: 5 years</li>
+                <li>CSS:3 years</li>
+                <li>javascript:2 years</li>
+            </ol>
+    </section>
+
+
+
+    <section id="workSection">
+        <h2>Work Experience</h2>
+         <img src="cal.png" height="20" width="20">  2019-present<br><br>
+         I have been working as a <u>Web Developer</u> and freelancing for these years. During this time, I have created websites for over five restaurants.
+        <br><br>
+        <img src="cal.png" height="20" width="20">  2017-2019<br><br>
+        Worked in a software company as a <u>Coder</u>. I have worked on various programs and gained experince to work with a team.
+        <br>
+    
+    </section>
+
+    <section id="linkSection">
+        <h2>Works:</h2>
+        <a href="https://github.com/122Ananya/Converter.git">Work 1</a><br><br>
+        <a href="https://www.linkedin.com/posts/ananya-shetty-79b3b52a7_wateranalysisreport-activity-7147199756220448768-WkFU?utm_source=share&utm_medium=member_desktop ">Work 2</a>
+    </section>
+
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === 'none' || section.style.display === '') {
+                section.style.display = 'block';
+            } else {
+                section.style.display = 'none';
+            }
+        }
+    </script>
+    <button onclick="toggleSection('experinceSection')">Close Experience Section</button>
+    <button onclick="toggleSection('workSection')">Close Work Section</button>
+    <button onclick="toggleSection('linkSection')">Close Link Section</button>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
